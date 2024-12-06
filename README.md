@@ -2,7 +2,7 @@
 
 This script allows your PD to get out there and do something without needing real civilians! Pullover locals, but be careful as they may start a pursuit or sometimes even pull a weapon out! Are you going to be the best cop, or watch locals get away with everything?
 
-# Demo: 
+# Demo: https://youtu.be/aJvNBU57VgE
 
 # Requirements
 - ESX LEGACY OR QBCORE (NEEDED)
