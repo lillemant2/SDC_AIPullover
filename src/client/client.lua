@@ -1072,17 +1072,19 @@ AddEventHandler("SDAP:Client:StartChaseTimer", function()
                         end
                     end
                 end
-                local wephash = nil
-                wephash = hasIllegal[math.random(1, #hasIllegal)] 
-                Wait(5000)
-                if curPullover.Ped then
-                    GiveWeaponToPed(curPullover.Ped, GetHashKey(wephash), 60, true, false)
-                    TaskLeaveVehicle(curPullover.Ped, curPullover.Veh, 256)
-                    Wait(2500)
-                    TriggerEvent("SDAP:Client:Notification", SDC.Lang.LocalIsFightingBack, "primary")
-                    SetCurrentPedWeapon(curPullover.Ped, GetHashKey(wephash), true)
-                    TaskCombatPed(curPullover.Ped, PlayerPedId(), 0, 16)
-                    SetPedKeepTask(curPullover.Ped, true)
+                if hasIllegal[1] then
+                    local wephash = nil
+                    wephash = hasIllegal[math.random(1, #hasIllegal)] 
+                    Wait(5000)
+                    if curPullover.Ped then
+                        GiveWeaponToPed(curPullover.Ped, GetHashKey(wephash), 60, true, false)
+                        TaskLeaveVehicle(curPullover.Ped, curPullover.Veh, 256)
+                        Wait(2500)
+                        TriggerEvent("SDAP:Client:Notification", SDC.Lang.LocalIsFightingBack, "primary")
+                        SetCurrentPedWeapon(curPullover.Ped, GetHashKey(wephash), true)
+                        TaskCombatPed(curPullover.Ped, PlayerPedId(), 0, 16)
+                        SetPedKeepTask(curPullover.Ped, true)
+                    end
                 end
             end
         end
