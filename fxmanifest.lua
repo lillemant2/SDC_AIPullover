@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'HoboDevCo#3011'
 description 'SDC | AI Pullover Script'
-version '1.0.2'
+version '1.0.3'
 this_is_a_map 'yes'
 
 shared_script {
