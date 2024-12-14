@@ -5,7 +5,7 @@ SDC = {}
 ---------------------------------------------------------------------------------
 SDC.Framework = "qb-core" --Either "qb-core" or "esx"
 SDC.NotificationSystem = "framework" -- ['mythic_old', 'mythic_new', 'tnotify', 'okoknotify', 'ox_lib', 'print', 'framework', 'none'] --Notification system you prefer to use
-SDC.UseProgBar = "ox_lib" --If you want to use a progress bar resource, options: ["progressBars", "mythic_progbar", "ox_lib", "none"]
+SDC.UseProgBar = "progressBars" --If you want to use a progress bar resource, options: ["progressBars", "mythic_progbar", "ox_lib", "none"]
 
 SDC.PoliceJobs = {
     --EX: ["job_name"] = "JOB_LABEL"
@@ -29,10 +29,10 @@ SDC.PayoutSettings = { --All payout configs
 -------------------------------Keybinds Configs----------------------------------
 ---------------------------------------------------------------------------------
 SDC.PulloverKeybinds = { --Main pullover settings
-    CommandName = "sdap:pulloverai", --Name of the command to pullover car in front
+    CommandName = "stanna", --Name of the command to pullover car in front
     Keybind = { --Kebind settings for Pullover
         Enabled = true, --If you want the keybind to be enabled
-        Key = "H" --Default Keybind (All Players Can Change In Game Keybinds)
+        Key = "P" --Default Keybind (All Players Can Change In Game Keybinds)
     }
 }
 
